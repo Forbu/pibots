@@ -1,0 +1,33 @@
+{
+  "name": "pibots",
+  "version": "0.1.0",
+  "description": "Open-source implementation of Grok Bot (AI teammates with a shared computer, compounding memory, multi-bot handoffs, skills, routines, Vault, and Auto Review) built on the Pi Agent SDK.",
+  "type": "module",
+  "bin": {
+    "pibots": "./src/cli.ts"
+  },
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "node ./src/cli.ts",
+    "serve": "node ./src/cli.ts serve",
+    "test": "node --test ./test/*.test.ts"
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "^1.2.0",
+    "@earendil-works/pi-ai": "^1.2.0",
+    "@earendil-works/pi-coding-agent": "^1.2.0",
+    "@earendil-works/pi-codemode": "^1.2.0",
+    "@earendil-works/pi-mcp": "^1.2.0",
+    "@earendil-works/pi-tui": "^1.2.0",
+    "chalk": "^6.0.0",
+    "typebox": "^1.3.27",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "license": "MIT"
+}
